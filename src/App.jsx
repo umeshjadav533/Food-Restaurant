@@ -10,7 +10,6 @@ import Cart from "./Components/pages/Cart";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
-import ProtectedRoute from "./Components/pages/ProtectedRoute";
 
 function App() {
   useEffect(() => {
@@ -24,50 +23,11 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
-
-          {/* Protected Routes */}
-          <Route
-            path="/about"
-            element={
-              <ProtectedRoute>
-                <About />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/service"
-            element={
-              <ProtectedRoute>
-                <Service />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/menu"
-            element={
-              <ProtectedRoute>
-                <Menu />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <ProtectedRoute>
-                <Contact />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/cart"
-            element={
-              <ProtectedRoute>
-                <Cart />
-              </ProtectedRoute>
-            }
-          />
-
-          {/* Redirect unknown routes to home */}
+          <Route path="/about"element={<About />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path ="/cart" element={<Contact /> } />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/*" element={<Navigate to="/home" />} />
         </Routes>
       </BrowserRouter>
