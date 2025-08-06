@@ -34,7 +34,7 @@ const Cart = () => {
                             <div className="d-flex">
                                 <h3>$ {item.price}</h3>
                                 <input type="number" min="1" max="20" defaultValue="1" className="fs-4 mx-5 ps-3" style={{width:"70px"}} value={quantity} onClick={(e)=>setquantity(e.target.value)}/>
-                                <button type="button" onChange={()=>deleteitem(item.id)}>Remove</button>
+                                <button type="button" onClick={()=>deleteitem(item.id)}>Remove</button>
                             </div>
                         </div>
                     </div>

@@ -1,19 +1,13 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import axios from "axios";
 import { useEffect, useState } from "react";
 import Food_Card from "./Food_Card";
+import foodItems from './../assets/assests'
 
 function FetchData({id_start, id_end}){
-    const [foodData,setfoodData] = useState([]);
-    const api = axios.create({
-        baseURL: "http://localhost:3000/"
-    });
-
+    const [foodData,setfoodData] = useState(foodItems);
 
     async function getfoodData(){
-        const res = await api.get("food_item");
-        const filteredData = res.data.filter(item=>item.id >= Number(id_start) && item.id <= Number(id_end));
-        setfoodData(filteredData);
+        const filteredData = foodData.filter(item=>item.id >= Number(id_start) && item.id <= Number(id_end));
+        await setfoodData(filteredData);
     }
     useEffect(()=>{
         getfoodData();
