@@ -1,5 +1,4 @@
-import Footer from '../Footer';
-import about_1 from './../assets/about-section/about_1.jpg';
+import about_1 from '../assets/about-section/about-1.jpg';
 import about_2 from './../assets/about-section/about-2.jpg';
 import about_3 from './../assets/about-section/about-3.jpg';
 import about_4 from './../assets/about-section/about-4.jpg';
@@ -63,7 +62,6 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <Footer />
     </section>
     )
 }

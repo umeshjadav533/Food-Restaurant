@@ -1,5 +1,3 @@
-import Footer from "../Footer";
-
 const Contact = () => {
     return (
     <section id="contact-section">
@@ -75,8 +73,6 @@ const Contact = () => {
             </div>
         </div>
     </div>
-
-    <Footer />
     </section>
     )
 }

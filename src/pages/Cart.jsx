@@ -19,7 +19,7 @@ const Cart = () => {
     }
 
     return (
-    <section id="cart-section" className="row container-fluid mx-0">
+    <section id="cart-section" className="row container-fluid mx-0" style={{marginBottom: "90px"}}>
     <h2>Shopping cart</h2>
         {
             cartitems.map((item)=>(

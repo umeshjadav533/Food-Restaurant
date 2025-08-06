@@ -1,5 +1,3 @@
-import Footer from "../Footer";
-
 const Home = () => {
     return (
         <>
@@ -13,7 +11,6 @@ const Home = () => {
             </div>
         </div>
     </section>
-    <Footer />
     </>
     )
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -56,7 +55,6 @@ const Login = () => {
             <button type="submit" className="w-100 border-0 py-3 rounded" id="login-btn">Login</button>
         </form>
         )}
-    <Footer />
     </section>
     )
 }

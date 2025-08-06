@@ -1,6 +1,4 @@
-import FetchData from "../FetchData";
-import Footer from "../Footer";
-
+import FetchData from "../Components/FetchData";
 const Menu = () => {
     
     return (
@@ -60,8 +58,6 @@ const Menu = () => {
                 <FetchData id_start="31" id_end="40"/>
             </div>
         </div>
-
-        <Footer />
     </section>
     )
 }

@@ -1,5 +1,4 @@
-import Footer from "../Footer";
-import Service_Card from "../Service_Card";
+import Service_Card from "../Components/Service_Card";
 
 const Service = () => {
     return (
@@ -20,7 +19,6 @@ const Service = () => {
                 <Service_Card icon={<i className="fa-solid fa-headphones-simple"></i>} name="24/7 Service"/>
             </div>
         </div>
-        <Footer />
     </section>
     )
 }
